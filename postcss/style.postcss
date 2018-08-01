@@ -1,0 +1,356 @@
+/* A simple reset. */
+*, ::before, ::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Set up fonts, colors and all that jazz. */
+body {
+  background: #f9fdfe;
+  color: #686a69;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: #007A86;
+  text-align: center;
+  line-height: 60px;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  float: left;
+}
+.header a {
+  display: inline;
+  color: lightgray;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+.header a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.anchor:before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+  margin: -60px 0 0; /* negative fixed header height */
+}
+
+#Basic_Info {
+  margin-top: 60px;
+}
+
+/* Headings use a different font because they’re hipsters. */
+h1, h2{
+  color: #2a2f2c;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  line-height: 1.125;
+  border-bottom: 1px solid black;
+}
+
+.heading {
+  font-size: 40px;
+}
+/* Set up general layout rules for outer containers. */
+.anchor, .results {
+  width: 80%;
+  align: center;
+  margin: 8vh auto;
+}
+div.ui-datepicker {
+  font-size: 60%;
+}
+.ui-datepicker-next {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: 78px;
+  top: 50%;
+  margin-top: 2px;
+}
+.ui-datepicker-trigger {
+  float: left;
+  padding-top:10px;
+  padding-right: 10px;
+}
+.First {
+  display: inline-block;
+  width: 48%;
+}
+.Second {
+  padding-top: 20px;
+  margin: 0px;
+  display: inline-block;
+  float: right;
+  width: 48%;
+}
+.select-style {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+
+  background: #fff
+    url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif")
+    no-repeat
+    90%
+    50%;
+}
+
+.select-style select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-style select:focus {
+  outline: none;
+}
+
+.content__heading_h1 {
+  font-size: 125%;
+}
+
+.content__heading_h2 {
+  font-size: 100%;
+}
+
+.content__lede {
+  margin-top: 8px;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  font-size: 87.5%;
+}
+
+.results {
+  width: 83%;
+  margin:auto;
+}
+
+.results__heading {
+  font-size: 110%;
+}
+
+.results__display-wrapper {
+  margin-top: 15px;
+  padding: 8px 16px;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+  background: #f9fdfe;
+  border: 1px solid #cdcfcf;
+  overflow-x: scroll;
+}
+
+.contact-form {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 16px 0 32px;
+  padding: 16px 0 32px;
+  padding: 1rem 0 2rem;
+  border-top: 1px solid #cdcfcf;
+  border-bottom: 1px solid #cdcfcf;
+  overflow: hidden;
+}
+
+.contact-form__input-group {
+  margin-top: 4px;
+  margin-top: 4px;
+  margin-top: 0.25rem;
+  padding: 8px 16px;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+}
+
+.contact-form__label {
+  display: block;
+  color: #414643;
+  font-family: Lato, sans-serif;
+  font-size: 75%;
+  line-height: 1.125;
+}
+
+.contact-form__label--checkbox-group {
+  display: inline-block;
+  margin-right: 16px;
+  margin-right: 16px;
+  margin-right: 1rem;
+  font-size: 75%;
+}
+
+.contact-form__label--checkbox, .contact-form__label--radio {
+  display: inline-block;
+  margin-left: 4px;
+  margin-left: 4px;
+  margin-left: 0.25rem;
+}
+
+.contact-form__input {
+  display: block;
+  margin-top: 0;
+  padding: 8px 12px;
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cdcfcf;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-transition: 150ms border-color linear;
+  transition: 150ms border-color linear;
+}
+
+.contact-form__input--checkbox, .contact-form__input--radio {
+  display: inline-block;
+  width: auto;
+}
+
+.contact-form__input--checkbox ~ .contact-form__input--checkbox,
+.contact-form__input--radio ~ .contact-form__input--radio {
+  margin-left: 16px;
+  margin-left: 16px;
+  margin-left: 1rem;
+}
+
+.contact-form__input:focus, .contact-form__input:active {
+  border-color: #686a69;
+  outline: 0;
+}
+
+.contact-form__button {
+  display: block;
+  float: right;
+  margin-right: 120px;
+  padding: 0 1rem 0.125rem;
+  background-color: #686a69;
+  border: 0;
+  color: #f9fdfe;
+  font-family: lato, sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  -webkit-transition: 150ms all linear;
+  transition: 150ms all linear;
+}
+
+.contact-form__button:hover,
+.contact-form__button:active,
+.contact-form__button:focus {
+  background: #2a2f2c;
+  cursor: pointer;
+  outline: 0;
+}
+.personnel_table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border: 2px solid lightgray;
+  margin: auto;
+  margin-top: 15px;
+  width: 100%;
+}
+.add_th {
+  text-align: center;
+  column-span: 1;
+}
+.add_container {
+  column-span: 1;
+}
+.add {
+  font-size: 40px;
+  width: 2%;
+  padding: -30px;
+  margin: 0px;
+  color: lightgreen;
+  cursor: pointer;
+
+  &:hover {
+    color: green;
+    text-decoration: none;
+  }
+}
+.delete_container {
+  column-span: 1;
+}
+.delete {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  color: red;
+  cursor: pointer;
+
+  &:hover {
+    color: darkred;
+    text-decoration: none;
+  }
+}
+.personnel_input {
+  width: 100%;
+}
+.personnel_table th {
+  background-color: #007A86;
+  text-align: center;
+  color: lightgray;
+  font-size: 18px;
+  box-shadow: 10px 10px 50px 20px #007A86 inset;
+}
+.personnel_table td, th {
+  border: 1px solid lightgray;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.select-options-personnel {
+  width: 100% !important;
+}
+#payment_method, #additional_info, #budget, #investigator_signature, #domenici_hall_signature{
+  margin-top:30px;
+}
+p{
+  float: right;
+width: 85%;
+}
+#Acknowledgement{
+  width:60%;
+  float:left;
+}
+#Acknowledgement_Div{
+  float: left;
+width: 1%;
+margin-left: 150px;
+margin-top: 30px;
+}
+#Non_UNM_Project{
+  width:5%;
+}
