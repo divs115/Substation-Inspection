@@ -112,10 +112,10 @@ div.ui-datepicker {
   background-color: #fff;
 
   background: #fff
-    url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif")
-    no-repeat
-    90%
-    50%;
+  url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif")
+  no-repeat
+  90%
+  50%;
 }
 
 .select-style select {
@@ -292,10 +292,10 @@ div.ui-datepicker {
   color: lightgreen;
   cursor: pointer;
 
-  &:hover {
-    color: green;
-    text-decoration: none;
-  }
+&:hover {
+   color: green;
+   text-decoration: none;
+ }
 }
 .delete_container {
   column-span: 1;
@@ -307,10 +307,10 @@ div.ui-datepicker {
   color: red;
   cursor: pointer;
 
-  &:hover {
-    color: darkred;
-    text-decoration: none;
-  }
+&:hover {
+   color: darkred;
+   text-decoration: none;
+ }
 }
 .personnel_input {
   width: 100%;
@@ -339,7 +339,7 @@ tr:nth-child(even) {
 }
 p{
   float: right;
-width: 85%;
+  width: 85%;
 }
 #Acknowledgement{
   width:60%;
@@ -347,9 +347,9 @@ width: 85%;
 }
 #Acknowledgement_Div{
   float: left;
-width: 1%;
-margin-left: 150px;
-margin-top: 30px;
+  width: 1%;
+  margin-left: 150px;
+  margin-top: 30px;
 }
 #Non_UNM_Project{
   width:5%;

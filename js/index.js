@@ -50,7 +50,7 @@ $(function() {
     'setDate': new Date(),
     showOn: "button",
     buttonImage:
-      "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+      "images/calendar.gif",
     buttonImageOnly: true
   });
   

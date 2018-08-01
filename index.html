@@ -1,280 +1,52 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.css" rel="stylesheet" type="text/css" />
-
-    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css" rel="stylesheet" />
-    <link href="http://protostrap.com/Assets/gv/css/gv.bootstrap-form.css" rel="stylesheet" type="text/css" />
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- Fav and touch icons -->
-    
+  <meta charset="UTF-8">
+  <title>Substation_Inspection</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
-    <div class="container-fluid">
-        <div class="row">
-
-            <form action="../submit" id="formentry" class="form-horizontal" role="form" data-parsley-validate novalidate>
-                <div class="container-fluid shadow">
-                    <div class="row">
-                        <div id="valErr" class="row viewerror clearfix hidden">
-                            <div class="alert alert-danger">Oops! Seems there are some errors..</div>
-                        </div>
-                        <div id="valOk" class="row viewerror clearfix hidden">
-                            <div class="alert alert-success">Yay! ..</div>
-                        </div>
-
-                        
-                                    <div class="row" style="display: block;"><div class="col-md-12"><div class="row"><div class="col-md-12"><div class="form-group brdbot">
-			    <h3>Substation Inspection</h3>
-			    <div class="controls col-sm-9">
-                    
-                <p id="field4" data-control-type="header" data-default-is-header="true" data-default-label="Header"></p><span class="error" id="errId1"></span></div>
-                
-		</div><div class="row" id="tab5" data-role="tab">
-				<ul class="nav nav-tabs">
-					  <li><a id="tabLabel6" href="#tabContent6" data-toggle="tab">Tab 1</a></li>
-					  <li class="active"><a id="tabLabel7" href="#tabContent7" data-toggle="tab">Tab 2</a></li>
-					  <li><a id="tabLabel8" href="#tabContent8" data-toggle="tab">Tab 3</a></li>
-				<div class="tab-toolbar"><span class="glyphicon glyphicon-cog"></span></div></ul>
-				<div class="tab-content">
-				  <div class="tab-pane" id="tabContent6"><div><div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6"><div class="form-group" style="display: block;">
-			    <label class="control-label control-label-left col-sm-3" for="Substation">Substation<span class="req"> *</span></label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="Substation" required="required" type="text" data-role="text" data-parsley-errors-container="#errId2"><span class="error" id="errId2"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="Inspector">Inspector<span class="req"> *</span></label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="Inspector" required="required" type="text" data-role="text" data-parsley-errors-container="#errId3"><span class="error" id="errId3"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="field11">DateTime</label>
-			    <div class="controls col-sm-9">
-                    
-                <span class="k-widget k-datetimepicker k-header form-control"><span class="k-picker-wrap k-state-default"><input class="form-control k-input" id="field11" role="textbox" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-readonly="false" style="width: 100%;" aria-label="Current focused date is null" type="text" data-role="datetime" data-error-container="#errfield11" data-parsley-errors-container="#errId4"><span class="k-select" unselectable="on"><span class="k-icon k-i-calendar" role="button" aria-controls="field11_dateview" unselectable="on">select</span><span class="k-icon k-i-clock" role="button" aria-controls="field11_timeview" unselectable="on">select</span></span></span></span><span class="error" id="errId4"></span></div>
-                
-		</div></div><div class="col-md-6"><div class="form-group">
-			    <label class="control-label">Select all that Apply</label>
-			    <div class="controls">
-                    
-                <label class="checkbox col-md-4" for="checkbox14"><input name="field13" id="checkbox14" type="checkbox" value="Clear" data-parsley-errors-container="#errId5">Clear</label><label class="checkbox col-md-4" for="checkbox15"><input name="field13" id="checkbox15" type="checkbox" value="Cloudy" data-parsley-errors-container="#errId5">Cloudy</label><label class="checkbox col-md-4" for="checkbox16"><input name="field13" id="checkbox16" type="checkbox" value="Sunny" data-parsley-errors-container="#errId5">Sunny</label><label class="checkbox col-md-4 field-layout-reset"><input name="field13" id="checkbox25" type="checkbox" value="Windy" data-parsley-errors-container="#errId5">Windy</label><label class="checkbox col-md-4"><input name="field13" id="checkbox27" type="checkbox" value="Cold" data-parsley-errors-container="#errId5">Cold</label><label class="checkbox col-md-4"><input name="field13" id="checkbox29" type="checkbox" value="Partially Cloudy" data-parsley-errors-container="#errId5">Partially Cloudy</label><span class="error" id="errId5"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="Other">Other</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="Other" type="text" data-role="text" data-parsley-errors-container="#errId6"><span class="error" id="errId6"></span></div>
-                
-		</div></div></div></div></div></div></div>
-				  <div class="tab-pane active" id="tabContent7"><div><div class="form-group brdbot">
-			    <h3>Power Transformer</h3>
-			    <div class="controls">
-                    
-                <p id="field61" data-control-type="header" data-default-is-header="true" data-default-label="Header"></p><span class="error" id="errId7"></span></div>
-                
-		</div><div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6"><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="Serial#">Serial #</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="Serial#" type="text" data-role="text" data-parsley-errors-container="#errId8"><span class="error" id="errId8"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="Size">Size</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="Size" type="text" data-role="text" data-parsley-errors-container="#errId9"><span class="error" id="errId9"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="MFG">MFG </label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="MFG" type="text" data-role="text" data-parsley-errors-container="#errId10"><span class="error" id="errId10"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="LiquidTemp">Liquid Temp</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="LiquidTemp" type="text" data-role="text" data-parsley-errors-container="#errId11"><span class="error" id="errId11"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="WindTemp">Wind Temp</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="WindTemp" type="text" data-role="text" data-parsley-errors-container="#errId12"><span class="error" id="errId12"></span></div>
-                
-		</div><div class="form-group" style="display: block;">
-			    <label class="control-label control-label-left col-sm-3" for="MainLiquidLevel">Main Liquid Level</label>
-			    <div class="controls col-sm-9">
-                    
-                <select class="form-control" id="MainLiquidLevel" selected="selected" data-role="select" data-parsley-errors-container="#errId13">
-		  
-		  
-		  
-		  
-		  
-		<option value="High">None</option><option value="">High</option><option value="Normal">Normal</option><option value="Low">Low</option></select><span class="error" id="errId13"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="LTCLiquidLevel">LTC Liquid Level</label>
-			    <div class="controls col-sm-9">
-                    
-                <select class="form-control" id="LTCLiquidLevel" selected="selected" data-role="select" data-parsley-errors-container="#errId14">
-		  
-		  
-		  
-		  
-		  
-		<option selected="selected" value="None">None</option><option value="Option 1">High</option><option value="Option 2">Normal</option><option value="Option 4">Low</option></select><span class="error" id="errId14"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="HVWindTemp">HV Wind Temp</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="HVWindTemp" type="text" data-role="text" data-parsley-errors-container="#errId15"><span class="error" id="errId15"></span></div>
-                
-		</div><div class="form-group" style="display: block;">
-			    <label class="control-label control-label-left col-sm-3" for="LVWindTemp">LV Wind Temp</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="LVWindTemp" type="text" data-role="text" data-parsley-errors-container="#errId16"><span class="error" id="errId16"></span></div>
-                
-		</div></div><div class="col-md-6"><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="TertiaryVoltageWindTemp">Tertiary Voltage Wind Temp</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="TertiaryVoltageWindTemp" type="text" data-role="text" data-parsley-errors-container="#errId17"><span class="error" id="errId17"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="NitrgenPressure">Nitrgen Pressure</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="NitrgenPressure" type="text" data-role="text" data-parsley-errors-container="#errId18"><span class="error" id="errId18"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="NitrogenBottlePressure">Nitrogen Bottle Pressure</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="NitrogenBottlePressure" type="text" data-role="text" data-parsley-errors-container="#errId19"><span class="error" id="errId19"></span></div>
-                
-		</div><div class="form-group" style="display: block;">
-			    <label class="control-label control-label-left col-sm-3" for="OilTemp">Oil Temp</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="OilTemp" type="text" data-role="text" data-parsley-errors-container="#errId20"><span class="error" id="errId20"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="OilLeaks">Oil Leaks</label>
-			    <div class="controls col-sm-9">
-                    
-                <select class="form-control" id="OilLeaks" selected="selected" data-role="select" data-parsley-errors-container="#errId21">
-		  
-		  
-		  
-		  
-		  
-		<option value="None">None</option><option value="Option 2">Highq</option><option value="Option 3">Option 3</option><option value="Option 4">Low</option></select><span class="error" id="errId21"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="MainOilLevel">Main Oil Level</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="MainOilLevel" type="text" data-role="text" data-parsley-errors-container="#errId22"><span class="error" id="errId22"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="GasInOilSensor">Gas in Oil Sensor</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="GasInOilSensor" type="text" data-role="text" data-parsley-errors-container="#errId23"><span class="error" id="errId23"></span></div>
-                
-		</div></div></div><div class="form-group brdbot" style="display: block;">
-			    <h4>Brushing Oil Level</h4>
-			    <div class="controls col-sm-9">
-                    
-                <p id="field54" data-control-type="header" data-default-is-header="true" data-default-label="Header"></p><span class="error" id="errId24"></span></div>
-                
-		</div><div class="row" style="display: block;"><div class="col-md-6"><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="H1">H1</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="H1" type="text" data-role="text" data-parsley-errors-container="#errId25"><span class="error" id="errId25"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="H2">H2</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="H2" type="text" data-role="text" data-parsley-errors-container="#errId26"><span class="error" id="errId26"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="H3">H3</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="H3" type="text" data-role="text" data-parsley-errors-container="#errId27"><span class="error" id="errId27"></span></div>
-                
-		</div></div><div class="col-md-6"><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="X1">X1</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="X1" type="text" data-role="text" data-parsley-errors-container="#errId28"><span class="error" id="errId28"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="X2">X2</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="X2" type="text" data-role="text" data-parsley-errors-container="#errId29"><span class="error" id="errId29"></span></div>
-                
-		</div><div class="form-group">
-			    <label class="control-label control-label-left col-sm-3" for="X3">X3</label>
-			    <div class="controls col-sm-9">
-                    
-                <input class="form-control k-textbox" id="X3" type="text" data-role="text" data-parsley-errors-container="#errId30"><span class="error" id="errId30"></span></div>
-                
-		</div></div></div><div class="form-group pull-right">
-			    
-			    
-                
-		<button class="btn btn-lg" id="button147" type="button">  Power Transformer</button></div></div></div></div></div>
-				  <div class="tab-pane" id="tabContent8"><div></div></div>
-				</div>
-		</div></div></div></div></div>
-                                
 
 
-                    </div>
-                </div>
-            </form>
-        </div>
+<div class="header">
+  <a href="#Basic_Info">Basic Info</a>
+  <a href="#Power_Transformer">Power Transformer</a>  
+</div>
+
+<form class="contact-form">
+  
+  <section class="anchor" id="Basic_Info">
+    <h1 class="content__heading_h1">Basic Info</h1>
+    <div class="First">
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="Substation">Substation</label>
+        <input class="contact-form__input" id="Substation" name="Substation" type="text" />
+      </div>
     </div>
-    
+    <div class="First">
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" >Date</label>
+        <input class="datepicker" id="datePicker" name="Date" />
+      </div>
+    </div>
+  </section>
+  <button class="contact-form__button" onclick="showResults()" type="submit">Summary --></button>
+</form>
 
+<div class="results">
+  <h2 class="results__heading">Form Summary</h2>
+  <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+</div>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/chosen/1.7.0/chosen.jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js'></script>
 
-    <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
-    <script src="http://protostrap.com/Assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.js" type="text/javascript"></script>
+<script  src="js/index.js"></script>
 
-    <script src="http://protostrap.com/Assets/inputmask/js/jquery.inputmask.js" type="text/javascript"></script>
-    <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
-    <script src="http://protostrap.com/Assets/parsely/parsley.extend.js" type="text/javascript"></script>
-    <script src="http://protostrap.com/Assets/parsely/2.0/parsley.js" type="text/javascript"></script>
-    <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
-    <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
 </body>
+
 </html>
